@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+  <html lang="ru">
+    <head>
+      <meta charset="utf-8" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="style.css" />
+      <meta
+        name="description"
+        content="Ремонт моторов, ремонт лодочных моторов, ремонт, лодка, мотор"
+      />
+      <meta
+        name="keywords"
+        content="Ремонт моторов, ремонт лодочных моторов, ремонт, лодка, мотор"
+      />
+      <!-- Favicons -->
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="img/favicon/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="img/favicon/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="img/favicon/favicon-16x16.png"
+      />
+      <link rel="manifest" href="img/favicon/site.webmanifest" />
+      <link
+        rel="mask-icon"
+        href="img/favicon/safari-pinned-tab.svg"
+        color="#5bbad5"
+      />
+      <meta name="msapplication-TileColor" content="#9f00a7" />
+      <meta name="theme-color" content="#ffffff" />
+      <title>Cruiser</title>
+    </head>
+    <body>
+      <!--Sprite-->
+      <svg style="display: none">
+        <symbol id="VK" viewBox="0 0 14.171 14.171">
+          <g>
+            <path
+              d="M13.268,0H0.905C0.405,0,0,0.405,0,0.904v12.363c0,0.499,0.405,0.904,0.905,0.904h12.362
+        c0.499,0,0.904-0.405,0.904-0.904V0.904C14.172,0.404,13.767,0,13.268,0z M11.755,8.635c0.259,0.264,0.821,0.707,0.719,1.158
+        c-0.094,0.414-0.712,0.263-1.312,0.287c-0.685,0.029-1.091,0.044-1.503-0.287C9.465,9.636,9.351,9.45,9.165,9.242
+        C8.996,9.054,8.783,8.717,8.493,8.73C7.972,8.756,8.135,9.482,7.95,9.977c-2.896,0.456-4.059-1.333-5.085-3.069
+        C2.368,6.067,1.65,4.261,1.65,4.261l2.048-0.007c0,0,0.657,1.195,0.831,1.503c0.148,0.262,0.311,0.47,0.479,0.704
+        c0.141,0.194,0.364,0.574,0.608,0.543c0.397-0.051,0.469-1.591,0.223-2.107C5.741,4.688,5.506,4.615,5.263,4.544
+        C5.345,4.026,7.56,3.918,7.918,4.32c0.52,0.584-0.36,2.21,0.352,2.684c1-0.524,1.854-2.718,1.854-2.718l2.398,0.015
+        c0,0-0.375,1.186-0.768,1.712c-0.229,0.308-0.989,0.994-0.959,1.503C10.819,7.919,11.437,8.311,11.755,8.635z"
+            />
+          </g>
+        </symbol>
+        <symbol id="Instagram" viewBox="0 0 512 512">
+          <g>
+            <path
+              d="m424.339 0h-336.678c-48.336 0-87.661 39.325-87.661 87.661v336.678c0 48.336 39.325 87.661 87.661 87.661h336.678c48.336 0 87.661-39.325 87.661-87.661v-336.678c0-48.336-39.325-87.661-87.661-87.661zm72.661 424.339c0 40.065-32.596 72.661-72.661 72.661h-336.678c-40.065 0-72.661-32.596-72.661-72.661v-336.678c0-40.065 32.596-72.661 72.661-72.661h336.678c40.065 0 72.661 32.596 72.661 72.661z"
+            />
+            <path
+              d="m256 112.226c-79.277 0-143.774 64.497-143.774 143.774s64.497 143.774 143.774 143.774 143.774-64.497 143.774-143.774-64.497-143.774-143.774-143.774zm0 272.548c-71.006 0-128.774-57.768-128.774-128.774s57.768-128.774 128.774-128.774 128.774 57.768 128.774 128.774-57.768 128.774-128.774 128.774z"
+            />
+            <path
+              d="m408.307 64.129c-21.816 0-39.565 17.749-39.565 39.564 0 21.816 17.749 39.565 39.565 39.565s39.564-17.749 39.564-39.565-17.748-39.564-39.564-39.564zm0 64.129c-13.545 0-24.565-11.02-24.565-24.565s11.02-24.564 24.565-24.564 24.564 11.02 24.564 24.564-11.019 24.565-24.564 24.565z"
+            />
+            <path
+              d="m193.284 193.284c30.7-30.7 78.656-34.7 114.028-9.511 3.373 2.402 8.057 1.616 10.46-1.759 2.403-3.374 1.615-8.057-1.759-10.46-19.742-14.058-43.973-20.761-68.224-18.876-24.551 1.908-47.675 12.562-65.112 30-17.437 17.437-28.091 40.561-30 65.111-1.885 24.253 4.819 48.482 18.876 68.224 1.463 2.055 3.771 3.15 6.116 3.15 1.505 0 3.025-.452 4.344-1.391 3.374-2.403 4.162-7.086 1.759-10.46-25.188-35.373-21.188-83.328 9.512-114.028z"
+            />
+            <path
+              d="m329.985 194.228c-3.374 2.403-4.162 7.086-1.759 10.46 25.189 35.372 21.189 83.328-9.511 114.028-30.7 30.699-78.655 34.7-114.028 9.511-3.375-2.402-8.057-1.616-10.46 1.759-2.403 3.374-1.615 8.057 1.759 10.46 17.558 12.503 38.664 19.188 60.182 19.188 2.675 0 5.36-.104 8.042-.312 24.551-1.909 47.675-12.562 65.111-30 17.437-17.437 28.091-40.561 30-65.112 1.885-24.253-4.818-48.482-18.876-68.224-2.403-3.373-7.085-4.161-10.46-1.758z"
+            />
+          </g>
+        </symbol>
+        <symbol id="Post" viewBox="0 0 174.239 174.239">
+          <g>
+            <path
+              d="M146.606,17.424H27.633C12.397,17.424,0,29.821,0,45.057v84.125c0,15.236,12.397,27.633,27.633,27.633h118.973
+    c15.236,0,27.633-12.397,27.633-27.633V45.057C174.239,29.821,161.842,17.424,146.606,17.424z M145.47,32.359L87.115,77.666
+    L28.76,32.359H145.47z M159.305,129.182c0,7.003-5.695,12.698-12.698,12.698H27.633c-7.003,0-12.698-5.695-12.698-12.698V45.057
+    c0-1.398,0.282-2.719,0.701-3.978l66.9,51.94c1.347,1.045,2.963,1.568,4.58,1.568s3.233-0.523,4.58-1.568l66.908-51.946
+    c0.42,1.26,0.702,2.584,0.702,3.984V129.182z"
+            />
+          </g>
+        </symbol>
+      </svg>
+
+      <!--Header-->
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__logo">
+              <img src="img/logo.PNG" alt=" " />
+            </div>
+
+            <nav class="nav">
+              <a class="nav__link" href="#info">НАШ ОФИС</a>
+              <a class="nav__link" href="#cards">ВИДЫ УСЛУГ</a>
+	      <a class="nav__link" href="#container2">ГАЛЕРЕЯ РАБОТ</a>
+              <a class="nav__link" href="#info">КОНТАКТЫ</a>
+               </nav>
+          </div>
+        </div>
+      </header>
+      <!--INTRO-->
+      <div class="intro">
+        <div class="container">
+          <div class="intro__inner">
+            <h1 class="intro__title">РЕМОНТ ЛОДОЧНЫХ МОТОРОВ</h1>
+            <h2 class="intro__subtitle">
+              самое качественное обслуживание лодочных моторов в СНГ
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!--INFO-->
+      <div class="container" style="font-family: sans-serif;">
+        <div class="info">
+          <div class="info__items">
+            <img class="info__icon" src="img/k.png" alt="" />
+            <h4 class="info__title">3</h4>
+            <div class="info__text">профессиональных сотрудника</div>
+          </div>
+          <div class="info__items">
+            <img class="info__icon" src="img/motor.PNG" alt="" />
+            <h4 class="info__title">3</h4>
+            <div class="info__text">года на рынке</div>
+          </div>
+          <div class="info__items">
+            <img class="info__icon" src="img/1.png" alt="" />
+            <h4 class="info__title">более 2500</h4>
+            <div class="info__text">довольных клиентов</div>
+          </div>
+        </div>
+      </div>
+      <div class="cards" id="cards">
+          <h4 class="persona__title2" >НАШИ УСЛУГИ</h4>
+          <h4 class="persona__right3">---</h4>
+          <h4 class="persona__left3">---</h4>
+
+      </div>
+      <div class="cards_var">
+        <div class="cards_vars">
+            <ul class="cards_items" style="padding-left: 0px;">
+                <li class="cards_item">
+                    <a class="cards_item_link">
+                       <figure class="cards__item__pic-wrap" data-category="Качество" >
+                           <img class="cards__item__img" src="img/24.png" alt="" >
+
+                       </figure>
+                   <div class="cards_item_info">
+                       <h5 class="cards__item__text">Оригинальные запчасти и заменители</h5>
+                   </div>
+                    </a>
+                </li>
+                <li class="cards_item">
+                      <a class="cards_item_link">
+                       <figure class="cards__item__pic-wrap" data-category="Популярное">
+                           <img class="cards__item__img" src="img/26.png" alt="" >
+
+                       </figure>
+                   <div class="cards_item_info">
+                       <h5 class="cards__item__text">Подбор и продажа</h5>
+                   </div>
+                    </a>
+                </li>
+                <li class="cards_item">
+                    <a class="cards_item_link">
+                       <figure class="cards__item__pic-wrap" data-category="Популярное" >
+                           <img  class="cards__item__img" src="img/22.png" alt="" >
+
+                       </figure>
+                   <div class="cards_item_info">
+                       <h5 class="cards__item__text">Диагностика</h5>
+                   </div>
+                    </a>
+                </li>
+                <li class="cards_item">
+                    <a class="cards_item_link">
+                       <figure class="cards__item__pic-wrap" data-category="Популярное" >
+                           <img class="cards__item__img" src="img/23.png" alt="" >
+
+                       </figure>
+                   <div class="cards_item_info">
+                       <h5 class="cards__item__text">Выездные работы</h5>
+                   </div>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+      </div>
+      <div id="content" class="col-sm-12" style="font-family: sans-serif;">      
+       <h1 align="center">Прайс-лист на ремонт и обслуживание подвесных лодочных моторов</h1>
+      <br><table class="table table-bordered" style="width: 90%;
+    margin: 0 auto 50px auto;">	
+        <tbody><tr>	<td colspan="2" style="text-align: center;"><span style="color: rgb(255, 156, 0);">ПРОВЕРКА ПЕРЕД ПОКУПКОЙ</span></td>	</tr>
+          <tr>		<td style="text-align: center;"><span style="font-weight: bold;">Мощность мотора</span></td>		
+            <td style="text-align: center;"><span style="font-weight: bold;">Цена, в руб.</span></td>	</tr>
+          <tr>		<td colspan="2" width="100%" style="text-align: center;"><span style="font-weight: bold;text-align: center;">Двухтактные модели</span></td>	</tr>
+          <tr>		<td style="text-align: center;">2-6 л.с.</td>		<td style="text-align: center;">1 000</td>	</tr> 
+          <tr>		<td style="text-align: center;">6-9.9 л.с.</td>		<td style="text-align: center;">1 200</td>	</tr> 
+          <tr>		<td style="text-align: center;">9.9-15 л.с.</td>		<td style="text-align: center;">1 500</td>	</tr>	
+          <tr>		<td style="text-align: center;">30 л.с.</td>		<td style="text-align: center;">2 000</td>	</tr>
+          <tr>		<td style="text-align: center;">40 л.с.</td>		<td style="text-align: center;">2 500</td>	</tr>	
+          <tr>		<td colspan="2" width="100%" style="text-align: center;"><span style="font-weight: bold;text-align: center;">Четырехтактные модели</span></td>	</tr>
+          <tr>		<td style="text-align: center;">2.5 л.с.</td>		<td style="text-align: center;">1 500</td>	</tr>	
+          <tr>		<td style="text-align: center;">4-6 л.с.</td>		<td style="text-align: center;">2 000</td>	</tr>	
+          <tr>		<td style="text-align: center;">8-15 л.с.</td>		<td style="text-align: center;">2 500</td>	</tr>	
+          <tr>		<td style="text-align: center;">9.9-20 л.с.</td>		<td style="text-align: center;">3 000</td>	</tr>
+          <tr>		<td style="text-align: center;">25-30 л.с.</td>		<td style="text-align: center;">3 500</td>	</tr>	
+          <tr>		<td style="text-align: center;">40-60 л.с.</td>		<td style="text-align: center;">4 000</td>	</tr>	
+          <tr>		<td style="text-align: center;">70-90 л.с.</td>		<td style="text-align: center;">5 000</td>	</tr>	
+          <tr>		<td colspan="2" width="100%"><span style="font-weight: bold;">Визуальный осмотр. Проверка пластиковых соединений. Осмотр прижимных винтов транца. Проверка тросов дроссельной заслонки и переключения передач. Осмотр масла в двигателе. Осмотр масляного фильтра. Проверка масла в редукторе. Осмотр топливного фильтра. Замер компрессии двигателя в цилиндрах. Осмотр свечей. Осмотр гребного винта. Проверка цилиндров эндоскопом +200 руб.</span></td>	</tr>
+          <tr>		<td colspan="2" width="100%"></td>	</tr>
+          <tr><td colspan="2"></td></tr>	
+          <tr>		<td colspan="2" width="100%" style="text-align: center;"><span style="color: rgb(255, 156, 0);text-align: center;">ТО ПОДВЕСНЫХ ЛОДОЧНЫХ МОТОРОВ</span></td>	</tr>
+          <tr>		<td style="text-align: center;"><span style="font-weight: bold;">Мощность мотора</span></td>		<td style="text-align: center;">
+            <span style="font-weight: bold;">Цена, в руб.</span></td>	</tr>	
+           <tr>		<td colspan="2" width="100%" style="text-align: center;"><span style="font-weight: bold;text-align: center;">Двухтактные модели</span></td>	</tr>
+          <tr>		<td style="text-align: center;">2-6 л.с.</td>		<td style="text-align: center;">1 500</td>	</tr> 
+          <tr>		<td style="text-align: center;">6-9.9 л.с.</td>		<td style="text-align: center;">1 700</td>	</tr> 
+          <tr>		<td style="text-align: center;">9.9-15 л.с.</td>		<td style="text-align: center;">2 000</td>	</tr>	
+          <tr>		<td style="text-align: center;">30 л.с.</td>		<td style="text-align: center;">2 500</td>	</tr>
+          <tr>		<td style="text-align: center;">40 л.с.</td>		<td style="text-align: center;">3 000</td>	</tr>	
+          <tr>		<td colspan="2" width="100%" style="text-align: center;"><span style="font-weight: bold;text-align: center;">Четырехтактные модели</span></td>	</tr>
+          <tr>		<td style="text-align: center;">2.5 л.с.</td>		<td style="text-align: center;">2 500</td>	</tr>	
+          <tr>		<td style="text-align: center;">4-6 л.с.</td>		<td style="text-align: center;">3 000</td>	</tr>	
+          <tr>		<td style="text-align: center;">8-15 л.с.</td>		<td style="text-align: center;">3 500</td>	</tr>	
+          <tr>		<td style="text-align: center;">9.9-20 л.с.</td>		<td style="text-align: center;">4 000</td>	</tr>
+          <tr>		<td style="text-align: center;">25-30 л.с.</td>		<td style="text-align: center;">4 500</td>	</tr>	
+          <tr>		<td style="text-align: center;">40-60 л.с.</td>		<td style="text-align: center;">5 000</td>	</tr>	
+          <tr>		<td style="text-align: center;">70-90 л.с.</td>		<td style="text-align: center;">6 000</td>	</tr>	
+          <tr>		<td colspan="2" width="100%" ><span style="font-weight: bold;">Визуальный осмотр. Шприцевание пресмасленок, смазка пластиковых соединений. Смазка прижимных винтов транца. Смазка тросов дроссельной заслонки и переключения передач. Замена масла в двигателе. Замена масляного фильтра. Замена масла в редукторе. Осмотр уплотнительных колец пробок слива редукторного масла. Осмотр топливного фильтра. Замер компрессии двигателя в цилиндрах. Осмотр свечей. Снятие гребного винта, смазка шлицов приводного вала гребного винта. Без учета расходных материалов</span></td>	</tr>
+          <tr><td colspan="2"></td></tr>	<tr>		<td colspan="2" width="100%" style="text-align: center;"><span style="color: rgb(255, 156, 0);text-align: center;">ПРОМЫВКА И РЕГУЛИРОВКА КАРБЮРАТОРА</span></td>	</tr>	
+          <tr>		<td style="text-align: center;"><span style="font-weight: bold;">Мощность мотора</span></td>		<td style="text-align: center;"><span style="font-weight: bold;">Цена, в руб.</span></td>	</tr>
+          <tr>		<td style="text-align: center;">до 15 л.с.</td>		<td style="text-align: center;">1 800</td>	</tr>
+          <tr>		<td style="text-align: center;">до 30 л.с.</td>		<td style="text-align: center;">2 100</td>	</tr>	
+          <tr>		<td style="text-align: center;">от 40 л.с.</td>		<td style="text-align: center;">2 700</td>	</tr>	
+          <tr>		<td colspan="2" width="100%"><span style="font-weight: bold;">Без учета расходных материалов</span></td>	</tr>
+          <tr><td colspan="2"></td></tr>	<tr>		<td colspan="2" width="100%" style="text-align: center;"><span style="color: rgb(255, 156, 0);text-align: center;">ПОЛНАЯ ДЕФЕКТОВКА ПОДВЕСНОГО ЛОДОЧНОГО МОТОРА</span></td>	</tr>	
+          <tr>		<td style="text-align: center;"><span style="font-weight: bold;">Мощность мотора</span></td>		<td style="text-align: center;"><span style="font-weight: bold;">Цена, в руб.</span></td>	</tr>
+          <tr>		<td colspan="2" width="100%" style="text-align: center;"><span style="font-weight: bold;text-align: center;">Двухтактные модели</span></td>	</tr>	
+          <tr>		<td style="text-align: center;">2-6 л.с.</td>		<td style="text-align: center;">4 500</td>	</tr>	
+          <tr>		<td style="text-align: center;">8-15 л.с.</td>		<td style="text-align: center;">7 500</td>	</tr>	
+          <tr>		<td style="text-align: center;">18-30 л.с.</td>		<td style="text-align: center;">10 500</td>	</tr>
+          <tr>		<td style="text-align: center;">40-50 л.с.</td>		<td style="text-align: center;">16 000</td>	</tr>	
+          <tr>		<td style="text-align: center;">55-100 л.с.</td>		<td style="text-align: center;">20 000</td>	</tr>	
+          <tr>		<td style="text-align: center;">115-175 л.с.</td>		<td style="text-align: center;">25 000</td>	</tr>	
+          <tr>		<td style="text-align: center;">от 200 л.с.</td>		<td style="text-align: center;">30 000</td>	</tr>	
+          <tr>		<td colspan="2" width="100%" style="text-align: center;"><span style="font-weight: bold;text-align: center;">Четырехтактные модели</span></td>	</tr>	
+          <tr>		<td style="text-align: center;">2-6 л.с.</td>		<td style="text-align: center;">6 000</td>	</tr>	
+          <tr>		<td style="text-align: center;">8-15 л.с.</td>		<td style="text-align: center;">8 500</td>	</tr>	
+          <tr>		<td style="text-align: center;">18-30 л.с.</td>		<td style="text-align: center;">13 500</td>	</tr>	
+          <tr>		<td style="text-align: center;">40-50 л.с.</td>		<td style="text-align: center;">18 000</td>	</tr>	
+          <tr>		<td style="text-align: center;">55-100 л.с.</td>		<td style="text-align: center;">30 000</td>	</tr>	
+          <tr>		<td style="text-align: center;">115-175 л.с.</td>		<td style="text-align: center;">35 000</td>	</tr>	
+          <tr>		<td style="text-align: center;">200-300 л.с.</td>		<td style="text-align: center;">40 000</td>	</tr>
+          <tr>		<td colspan="2" width="100%"><span style="font-weight: bold;">Включает разборку и сборку мотора без учета расходных материалов</span></td>	</tr>
+          <tr><td colspan="2"></td></tr>	<tr>		<td colspan="2" width="100%" style="text-align: center;"><span style="color: rgb(255, 156, 0);text-align: center;">ПЕРЕБОРКА РЕДУКТОРА</span></td>	</tr>	
+          <tr>		<td style="text-align: center;"><span style="font-weight: bold;">Мощность мотора</span></td>		<td style="text-align: center;"><span style="font-weight: bold;">Цена, в руб.</span></td>	</tr>	
+          <tr>		<td style="text-align: center;">2-10 л.с.</td>		<td style="text-align: center;">2 600</td>	</tr>	
+          <tr>		<td style="text-align: center;">15-20 л.с.</td>		<td style="text-align: center;">4 900</td>	</tr>	
+          <tr>		<td style="text-align: center;">25-50 л.с.</td>		<td style="text-align: center;">9 000</td>	</tr>	
+          <tr>		<td style="text-align: center;">55-150 л.с.</td>		<td style="text-align: center;">12 800</td>	</tr>	
+          <tr>		<td style="text-align: center;">свыше 150 л.с.</td>		<td style="text-align: center;">20 500</td>	</tr>	
+          <tr>		<td colspan="2" width="100%"><span style="font-weight: bold;">Включает в себя определение неисправности и замену запчастей (сами запчасти и расходные материалы в стоимость не входят)</span></td>	</tr>
+          <tr><td colspan="2"></td></tr>	
+          <tr>		<td colspan="2" width="100%" style="text-align: center;"><span style="color: rgb(255, 156, 0);text-align: center;">ЗАМЕНА ПРОКЛАДКИ (БЛОК ЦИЛИНДРОВ/ДЕЙДВУД)</span></td>	</tr>	
+          <tr>		<td style="text-align: center;"><span style="font-weight: bold;">Мощность мотора</span></td>		<td style="text-align: center;"><span style="font-weight: bold;">Цена, в руб.</span></td>	</tr>	
+          <tr>		<td style="text-align: center;">2-6 л.с.</td>		<td style="text-align: center;">800</td>	</tr>	
+          <tr>		<td style="text-align: center;">8-20 л.с.</td>		<td style="text-align: center;">1 500</td>	</tr>	
+          <tr>		<td style="text-align: center;">25-40 л.с.</td>		<td style="text-align: center;">2 200</td>	</tr>
+          <tr>		<td style="text-align: center;">50-60 л.с.</td>		<td style="text-align: center;">4 000</td>	</tr>
+          <tr>		<td style="text-align: center;">75-150 л.с.</td>		<td style="text-align: center;">6 500</td>	</tr>
+          <tr>		<td style="text-align: center;">150-300 л.с.</td>		<td style="text-align: center;">8 800</td>	</tr>
+          <tr>		<td colspan="2" width="100%"><span style="font-weight: bold;">Без учета запчастей и расходных материалов</span></td>	</tr>
+          <tr><td colspan="2"></td></tr>	<tr>		<td colspan="2" width="100%" style="text-align: center;"><span style="color: rgb(255, 156, 0);">ЗАМЕНА КРЫЛЬЧАТКИ ПОМПЫ ОХЛАЖДЕНИЯ</span></td>	</tr>	
+          <tr>		<td style="text-align: center;"><span style="font-weight: bold;">Мощность мотора</span></td>		<td style="text-align: center;"><span style="font-weight: bold;">Цена, в руб.</span></td>	</tr>	
+          <tr>		<td style="text-align: center;">2-6 л.с.</td>		<td style="text-align: center;">1 200</td>	</tr>
+          <tr>		<td style="text-align: center;">8-30 л.с.</td>		<td style="text-align: center;">2 000</td>	</tr>
+          <tr>		<td style="text-align: center;">свыше 30 л.с.</td>		<td style="text-align: center;">2 800</td>	</tr>
+          <tr>		<td colspan="2" width="100%"><span style="font-weight: bold;">Без учета запчастей и расходных материалов</span></td>	</tr>
+          <tr><td colspan="2"></td></tr>	<tr>		<td colspan="2" width="100%" style="text-align: center;"><span style="color: rgb(255, 156, 0);text-align: center;">ПРОЧЕЕ</span></td>	</tr>	
+          <tr>		<td style="text-align: center;"><span style="font-weight: bold;">Услуга</span></td>		<td style="text-align: center;"><span style="font-weight: bold;">Цена, в руб. (ориентировочная) </span></td>	</tr>	
+          <tr>		<td style="text-align: center;">Установка мотора на катер/лодку</td>		<td style="text-align: center;">7 000</td>	</tr>
+          <tr>		<td style="text-align: center;">Установка машинки газ/реверс</td>		<td style="text-align: center;">4 000</td>	</tr>
+          <tr>		<td style="text-align: center;">Установка приборов</td>		<td style="text-align: center;">2 000</td>	</tr>
+          <tr>		<td style="text-align: center;">Установка РУ </td>		<td style="text-align: center;">6 000</td>	</tr>
+          <tr>		<td style="text-align: center;">Проверка нового мотора в тестовом баке </td>		<td style="text-align: center;">1 000</td>	</tr>
+          <tr>		<td style="text-align: center;">Консервация водяной системы</td>		<td style="text-align: center;">6 000</td>	</tr>
+          <tr>		<td style="text-align: center;">Консервация кондиционера</td>		<td style="text-align: center;">1 800</td>	</tr>
+          <tr>		<td style="text-align: center;">Консервация генератора</td>		<td style="text-align: center;">3 000</td>	</tr>
+          <tr>		<td colspan="2" width="100%"><span style="font-weight: bold;">Без учета запчастей и расходных материалов</span></td>	</tr>
+	 <tr><td colspan="2"></td></tr>	<tr>		<td colspan="2" width="100%" style="text-align: center;"><span style="color: rgb(255, 156, 0);text-align: center;">ЛОДОЧНЫЕ МОТОРЫ HANGKAI</span></td>	</tr>	
+          <tr>		<td style="text-align: center;"><span style="font-weight: bold;">Мотор</span></td>		<td style="text-align: center;"><span style="font-weight: bold;">Цена, в руб.</span></td>	</tr>	
+          <tr>		<td style="text-align: center;">Hangkai 9.9</td>		<td style="text-align: center;">95 000</td>	</tr>
+          <tr>		<td style="text-align: center;">Hangkai 9.8</td>		<td style="text-align: center;">85 000</td>	</tr>
+			<td style="text-align: center;">Hangkai 6.0</td>		<td style="text-align: center;">60 000</td>	</tr>
+        </tbody>
+        </table>
+      </div>
+             <div class="container2" id="container2">
+             <h1 class="intro__title2"> ГАЛЕРЕЯ РАБОТ </h1>
+             <h1 class="persona__right2">---</h1>
+             <h1 class="persona__left2">---</h1>
+             </div>
+        <div class="gallery" id="gallery">
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/phXRSdz/493dfd0a-f502-4179-9b4d-ae9378d8b7a9.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/F0Xz7gy/319db0ad-5ac4-421e-9532-81a44a3d3c2a.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/177JK6Y/304e3710-55f2-4afe-bda6-39bb01bfc2c9.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/TPcJ6y6/225f90c7-47b4-4065-a366-03ee5fba36db.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/fpNFLDT/181c1135-96f7-4633-bc66-bd9ca269be22.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/cy5rrw1/108fe123-d2c0-440b-83b1-1b3d46ca2717.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/pRhPpSJ/63a0db4a-6fcd-4c7d-82fb-37a9a006c419.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/kmRpxg9/50caadb8-37d9-43e4-81ba-bbcde54d0ece.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/0n1jjH3/38e00b73-6b19-4576-a9c5-8b8015169872.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/3cNHpcP/23f8e1c7-dbf1-4e23-9334-948e305bd4ed.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/KbNhCPg/19e901af-2e1f-4f02-98f1-9f012ea94d1c.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/z4zbD9y/11be6d31-a2a0-4118-9354-ee5a858022e4.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/ZzrX8DP/9b304401-b817-4bcd-86b5-a3339c0d7890.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/Ypc6XSW/8ee27b9d-5ddf-440e-846a-ce974e3c173e.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/K0MQSNW/6f4e1e88-93ba-433e-86ce-3840f9ac71d2.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/WFzf5WS/5d437a80-1c5b-4274-9ed9-149b73c4bb1d.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/9H5mkbt/5cd88256-83af-452b-a5d0-3da24a161e89.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/MkgPgrX/2f253915-5167-4d25-bda2-f38092c6a5bd.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/m9Tzyf9/2bf1bdd9-47c0-4e50-9c87-5578ef0ae07c.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/pdBPNrW/1a8f43e9-69b6-4773-ac11-4c0efbe4e210.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/HPN4ppd/0f153f24-08e7-48be-b297-8eb0d7bad56f.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/9qK4TvT/0efdfd3f-9249-4802-a72e-493e673f3b30.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/hyQd40C/0ab81317-7f27-4c9a-be82-8b3b040ffde0.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/t4fBtgY/f0720d4a-03eb-4e09-be40-4a033c3e72f1.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/phXRSdz/493dfd0a-f502-4179-9b4d-ae9378d8b7a9.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/wQrSp6H/0871b737-66f5-4bd9-a095-087e618197d3.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/GnB5NHB/02175ed9-b53c-4cd4-b534-56bc4d2251aa.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/wN4Drqw/4631a59d-a957-44d3-b767-65a112e81580.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/xDqMMCn/6777affb-8644-487b-9697-680f9efcf7c7.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/2hW7S9p/6783d388-05ea-4297-8574-7d46959fcb57.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/Thm8zKd/7523f426-c5ec-4496-a1ab-d171030bd0e4.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/dpddZ2k/015348b7-d794-4010-a6e5-03ac9b5de578.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/fXqmYY4/40017b13-7a3a-4d67-b2f8-658e2cfd7b97.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/M2KX7gC/973508b0-cf3b-4f5c-8fb3-550328b4384a.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/t3wHNQH/01113499-e021-4111-8c58-c37432ef2b38.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/D9WmF1D/2126681b-fa83-4eb7-add1-ad480b8b5080.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/s1Kydmn/4525122e-2c52-46ea-8073-d0c779deb649.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/Tb8VH2r/a6c0943a-07ca-4cc0-a27f-5fdcf271bc93.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/jVz5pjW/a338b5e2-1726-46c6-86b4-1411ebf5fb06.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/jhBwk21/b4d4166d-dcaf-4f0b-8cf4-91f95b4cff17.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/yYtTv9C/b55b8bb4-2e1c-45e9-8905-f857dc8042fe.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/3Y7pGqc/ba7cc10e-3f1a-45b4-9667-aa74f8cb9360.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/PcbMfdD/ba7cc10e-3f1a-45b4-9667-aa74f8cb9360.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/PC4mdz5/bfb65cbd-2ce2-4034-b8f0-feb984e2baa0.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/YBYQ1GJ/c1558531-96ea-47b9-8f28-3e8c8e1743fe.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/v3Fq2XN/cadaf855-7373-4a99-8b47-5f027c29ab12.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/PGz9JL1/d5da6f10-3ef5-4d01-9727-1c924acd6d87.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/N3LwZzn/d8b1bf03-7db1-4ac6-b8c3-3fbd35394329.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/59VJS6n/d60c2110-2b2e-4859-a670-c9c5b0d963ad.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/dbJ9Ytt/654bcbef-3f4f-4a58-9094-c7ed47c60b3b.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/x1YsH1m/a7d51c43-08a5-41cf-997b-cdd706d5da58.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/QJdcQVr/d5145c8a-0286-4e99-89dd-da264055349c.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/hcPJBtp/538b3b2d-5594-42ab-aef3-b55e1902ea9e.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/HGxM7Ns/ea589961-ba8e-4811-a167-ab41253132e1.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/fvp4GgZ/ec71300f-1f7a-4e2b-ad11-eef2564015e2.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/XpFpX1D/edb4d331-f58b-470c-8897-e06cb122a088.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/kBpXDfd/eeb0fe5a-20d3-4eaf-9839-838211ef7162.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="https://i.ibb.co/fGC3WqJ/3ffdc9f8-6bfa-420f-b5c1-e5c802a95863.jpg" alt=""></div>
+        </div>	
+    </div>
+
+
+      <!-- information -->
+      <footer class="information" id="info" style="font-family: sans-serif;">
+        <div class="contanier">
+          <div class="footer_inner">
+            <div class="footer__block">
+              <h4 class="footer__title">Наш офис</h4>
+              <address class="footer__address">
+                <p>г.Барнаул, ул. Бабуркина 13/1, Барнаул, Алтайский край, 656065, 28 Бокс</p>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A66a442fa5f7a7d705f18325ba01a324dc4b927c11f44b963f8b772bd352242a6&amp;source=constructor" width="500" height="400" frameborder="0">
+                </iframe>
+
+              </address>
+            </div>
+            <div class="footer__block">
+              <h4 class="footer__title">Контакты</h4>
+              <div class="social">
+                <a class="social__item" href="https://vk.com/k0t_kokoc" target="_blank" >
+                  <img src="./img/vk-reproductor.svg" class="social__icon" />
+                 Мы в VK
+                </a>
+                <a class="social__item" href="mailto:a.s.sergeevz@mail.ru" target="_blank">
+                <img src="./img/closed-mail-envelope.svg" class="social__icon"/>
+                  <p>Почта - a.s.sergeevz@mail.ru</p>
+                </a>
+                <a class="social__item" href="https://instagram.com/a.sergeev77?utm_medium=copy_link" target="_blank">
+                  <img src="./img/instagram.svg" class="social__icon" />
+                 Instagram - a.sergeev77
+                </a>
+
+                <a class="social__item" >
+                  +7(913)0930043 - Алексей Сергеев
+	          </a>
+                <a class="social__item" >
+                  +7(913)1086439 - Иван Сергеев
+                  </a>
+              <iframe src="https://yandex.ru/sprav/widget/rating-badge/215866548525" width="150" height="50" frameborder="0"
+    style ="margin-top: 20px;">
+             </iframe>
+              </div>
+            </div>
+          </div>
+          <!-- /.footer_inner -->
+        </div>
+      <!-- ./contanier -->
+      </footer>
+       <div class= "sert" style="font-family: sans-serif;">
+           <h5 class="sert2">
+               Cruiser, 2023. Все права защищены.
+           </h5>
+       </div>
+      <script src="js1.js"></script>
+    </body>
+  </html>
+</html>
